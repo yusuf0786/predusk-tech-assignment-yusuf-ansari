@@ -1,0 +1,6 @@
+[
+{ "id": "gpt-4o", "label": "GPT-4o" },
+{ "id": "gpt-3.5-turbo", "label": "GPT-3.5 Turbo" },
+{ "id": "claude-3.5-sonnet", "label": "Claude 3.5 Sonnet" },
+{ "id": "mistral-large", "label": "Mistral Large" }
+]

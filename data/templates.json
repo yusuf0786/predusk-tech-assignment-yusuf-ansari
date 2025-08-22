@@ -1,0 +1,5 @@
+[
+{ "id": "t1", "name": "Summarize Document", "prompt": "Summarize the following text in 5 bullet points:" },
+{ "id": "t2", "name": "Bug Report Triage", "prompt": "You are a triage bot. Categorize the bug and suggest severity:" },
+{ "id": "t3", "name": "Marketing Taglines", "prompt": "Generate 10 short taglines for a fintech app targeting students:" }
+]

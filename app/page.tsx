@@ -1,5 +1,3 @@
-// app/page.tsx
-import Link from 'next/link';
 import { ModelSelector } from '../components/ModelSelector';
 import { ParametersPanel } from '@/components/ParametersPanel';
 import { PromptEditor } from '../components/PromptEditor';

@@ -67,8 +67,16 @@ export const PromptEditor: React.FC = () => {
         className="h-28 w-full resize-none rounded-xl border border-gray-200 bg-gray-50 p-3 text-sm focus-ring dark:border-gray-700 dark:bg-gray-800"
       />
 
+      {/* ✅ Show currently loaded template */}
+      {selected && (
+        <div className="mt-2 text-xs text-gray-500">
+          Loaded template: <span className="font-medium">{selected.name}</span>
+        </div>
+      )}
+
       <div className="mt-2 text-xs text-gray-500">{prompt.length} chars</div>
 
+      {/* ✅ Use isOpen instead of open */}
       <Modal isOpen={open} onClose={() => setOpen(false)}>
         <div className="mb-3">
           <input
@@ -87,6 +95,7 @@ export const PromptEditor: React.FC = () => {
                 <Button
                   variant="secondary"
                   onClick={() => {
+                    setSelected(t);
                     setPrompt(t.prompt);
                     setOpen(false);
                   }}
